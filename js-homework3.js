@@ -33,9 +33,13 @@ console.log(fac);
 let str3 = 'Считаем до 10и:';
 
 for (let d = 1; d <=10; d++) {
-    d === 1 ? str3 += ' ' + d + ', ' :
-        d < 10 ? str3 += d + ', ' :
-            str3 += d;
+    if (d === 1) {
+        str3 += ' ' + d + ', '
+    } else if (d < 10) {
+        str3 += d + ', '
+    } else {
+        str3 += d
+    }
 }
 console.log(str3);
 
