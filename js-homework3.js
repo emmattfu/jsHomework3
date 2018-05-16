@@ -43,20 +43,19 @@ console.log(str3);
 let str4 = 'JavaScript is a pretty good language',
     noSpaceStr = '';
 
-for (let i = 0; i < str4.length; i++) {
-    if (str4[i - 1] === ' ') {
-        noSpaceStr += str4[i].toUpperCase();
+for (let d = 0; d < str4.length; d++) {
+    if (str4[d] !== ' ') {
+        noSpaceStr += str4[d]
     } else {
-        noSpaceStr += str4[i]
+        noSpaceStr += str4[d + 1].toUpperCase()
     }
 }
-noSpaceStr = noSpaceStr.replace(/\s+/g,'');
 console.log(noSpaceStr);
+
 // Задача № 6
 for (let a = 1; a <= 15; a++) {
-    if (a % 2 !== 0) {
-        console.log(a)
-    } else {
-        continue
-    }
+    if (a % 2 !== 0) console.log(a);
+    continue
 }
+
+
